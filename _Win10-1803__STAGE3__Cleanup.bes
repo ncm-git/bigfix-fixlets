@@ -12,7 +12,7 @@
 <P>Win10-1803::STAGE3::Cleanup</P>
 <UL>
 <LI>Removes the Stage Installation Files</LI></UL>]]></Description>        
-        <Relevance>if exist file "C:\temp\Win10\SW_DVD5_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-2_MLF_X21-79647.ISO" then true else false</Relevance>
+        <Relevance>if exist file "C:\temp\Win10\SW_DVD5_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-2_MLF_X21-XXXXX.ISO" then true else false</Relevance>
         <Relevance>version of operating system as string contains "17134"</Relevance>
         <Category>ARRIS Management</Category> 
         <Source>Internal</Source> 
