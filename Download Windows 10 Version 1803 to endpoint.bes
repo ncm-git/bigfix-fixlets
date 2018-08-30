@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Task>
+		<Title>Download Windows 10 Version 1803 to endpoint</Title>
+		<Description><![CDATA[This task will download 1 files from the "Win10 1803" Software Distribution Package onto selected endpoints <BR><BR><B>Installation Command:</B> setup.exe<BR><BR><B>Run Command As:</B> System User<BR><BR><B>Download Size:</B> 4,915,692 KB ]]></Description>
+		<Relevance><![CDATA[(if(name of operating system starts with "Win") then free space of drive of client > 10067337216 else if ((mac of it) of operating system) then free space of filesystem of folder (pathname of client) > 10067337216 else free space of filesystem of client > 10067337216)]]></Relevance>
+		<Relevance>name of operating system does not contain "Mac OS"</Relevance>
+		<Relevance>exists value "ReleaseID" whose (it as string = "1607") of key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" of native registry</Relevance>
+		<Relevance><![CDATA[exists key "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\" whose (value "UBR" of it as integer >= 2189) of native registry]]></Relevance>
+		<Relevance>not exists file "C:\temp\Win10\SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO"</Relevance>
+		<Relevance><![CDATA[version of client >= "8.2"]]></Relevance>
+		<Category>Software Distribution</Category>
+		<DownloadSize>5033668608</DownloadSize>
+		<Source>Win10 1803</Source>
+		<SourceID><![CDATA[<Unspecified>]]></SourceID>
+		<SourceReleaseDate>2018-07-26</SourceReleaseDate>
+		<SourceSeverity><![CDATA[<Unspecified>]]></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-runAsSystem</Name>
+			<Value>true</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>action-ui-metadata</Name>
+			<Value>{"version":"1","icon":"","size":"5033668608"}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swdCommandOverride</Name>
+			<Value>setup.exe</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swd-wizard-data</Name>
+			<Value>{"vendor":"Microsoft","files":[{"rpm_metadata":null,"spb_metadata":null,"appx_metatdata":null,"osd_metadata":null,"msi_metadata":null,"folderoffset":"","exe_metadata":null,"sha256":"100b3c27f080800ef6514c9ffeb9a85cf55182925e377e6abe31612f46f83fc2","compressed_data_for_package":false,"id":"BDAF443E43BC392565041ED25137402F14AFB09E_1532637556310412","ReferenceID":"98426","uploadSuffix":"bfswd","file_url":null,"HasAnonymousReference":false,"sha1":"BDAF443E43BC392565041ED25137402F14AFB09E","ReferenceName":"/BDAF443E43BC392565041ED25137402F14AFB09E/SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO","filename":"SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO","appv_metadata":null,"dateadded":"Thu, 26 Jul 2018 16:37:10 -0400","size":5033668608}],"fullInstallCommand":null,"pkgvariablekey":"SWD_Package_admn_nmiller@cmg.int_1532637222708963","description":null,"version":"1","creator":"admn_nmiller@cmg.int","product":"Win10 1803","os":[],"categories":[],"lastmodified":"Thu Jul 26 16:39:16 GMT-0400 2018","site":null,"runAsSystem":false,"useCommandLine":false,"comment":null,"owner":"admn_nmiller@cmg.int","pkgTag":""}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-advancedPathOptions</Name>
+			<Value>{"deleteCustomPath":false,"customPathName":null,"customPath":false}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-advancedLogOptions</Name>
+			<Value>{"individualLogCustomerName":null,"individualLog":false,"uploadTheLog":false}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swdPackageID</Name>
+			<Value>SWD_Package_admn_nmiller@cmg.int_1532637222708963</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-prePostInstall</Name>
+			<Value>{"postType":null,"postInstall":null,"selected":false,"preType":null,"preInstall":null}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-pkgTag</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-pkgType</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swdSelectedFiles</Name>
+			<Value>["BDAF443E43BC392565041ED25137402F14AFB09E"]</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-canPreserveCustom</Name>
+			<Value>true</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swdUseCommandLine</Name>
+			<Value>true</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-swdDeployCategory</Name>
+			<Value>Install</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-adf-wizard-source</Name>
+			<Value>Software Distribution_SoftwareDistribution</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-adf-wizard-data</Name>
+			<Value>""</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Fri, 03 Aug 2018 19:36:44 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<DefaultAction ID="Action1">
+			<Description>
+				<PreLink><![CDATA[Click&nbsp;]]></PreLink>
+				<Link>here</Link>
+				<PostLink><![CDATA[&nbsp;to deploy this action]]></PostLink>
+			</Description>
+			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell"><![CDATA[// ---------------------------------------------EDITING INSTRUCTIONS---------------------------------------------------------------------
+// When editing this task through the Manage Software Distribution Packages dashboard, you will have the option to preserve any custom edits you make to this action.
+// If you select the option to preserve custom edits, only areas bound by the comment markers 'Preparation Marker', 'Command Marker' and 'Closing Marker' are updated.
+// To ensure that all your custom Action Script changes can be preserved, only make changes to areas that are not bound by the comment markers.
+// Removing the comment markers may result in the Action Script not updating correctly during the next edit.
+// See KB Article swg21668807 (http://www-01.ibm.com/support/docview.wss?uid=swg21668807) for more information.
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//**Begin Preparation Marker
+// Download all specified files
+begin prefetch block
+  add prefetch item name=bdaf443e43bc392565041ed25137402f14afb09e sha1=bdaf443e43bc392565041ed25137402f14afb09e size=5033668608 url=SWDProtocol://127.0.0.1:52311/Uploads/bdaf443e43bc392565041ed25137402f14afb09e/SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129 sha256=100B3C27F080800EF6514C9FFEB9A85CF55182925E377E6ABE31612F46F83FC2
+end prefetch block
+
+// All SWD files will go into a folder in the clients __BESData folder. This folder gets cleared on every restart.
+
+//CLEANUP any old attempts
+waithidden "{pathname of system folder & "\cmd.exe"}" /C rmdir "c:\temp\Win10" /S /Q
+
+//create new installation folders
+if {not exist folder "c:\temp"}
+	waithidden "{pathname of system folder & "\cmd.exe"}" /C mkdir "c:\temp"
+endif
+
+if {not exist folder "c:\temp\Win10"}
+	waithidden "{pathname of system folder & "\cmd.exe"}" /C mkdir "c:\temp\Win10"
+endif
+
+move __Download\bdaf443e43bc392565041ed25137402f14afb09e "c:\temp\Win10\SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO"
+//**Begin Closing Marker
+// Get the return code of the previous action.
+parameter "returnCode" = "{exit code of action}"
+
+// Task will now exit.
+exit {parameter "returnCode"}
+//**End Closing Marker]]></ActionScript>
+		</DefaultAction>
+	</Task>
+</BES>
