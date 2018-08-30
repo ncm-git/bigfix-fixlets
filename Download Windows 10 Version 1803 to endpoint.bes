@@ -122,7 +122,7 @@ if {not exist folder "c:\temp\Win10"}
 	waithidden "{pathname of system folder & "\cmd.exe"}" /C mkdir "c:\temp\Win10"
 endif
 
-move __Download\bdaf443e43bc392565041ed25137402f14afb09e "c:\temp\Win10\SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO"
+move __Download\bdaf443e43bc392565041ed25137402f14afb09e "__Download\SW_DVD9_Win_Pro_Ent_Edu_N_10_1803_64BIT_English_-4_MLF_X21-87129.ISO"
 //**Begin Closing Marker
 // Get the return code of the previous action.
 parameter "returnCode" = "{exit code of action}"
